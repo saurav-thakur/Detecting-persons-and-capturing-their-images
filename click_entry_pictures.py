@@ -7,7 +7,7 @@ def click_entry_person_picture(frame,start_point2,end_point2,hog):
 
     for (x, y, w, h) in boxes:
         person = entry_frame[y:y+h, x:x+w]
-        cv2.imwrite('./captured_images/sideways_captured/person_{}.jpg'.format(count), person)
+        cv2.imwrite('./captured_images/entry_captured/person_{}.jpg'.format(count), person)
         count += 1
 
     
