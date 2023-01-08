@@ -14,6 +14,11 @@ I used a deep neural network of opencv to detect the people present in the video
 - It builds a bounding box in the sideways and entry coordinates
 - It detects the person and whenever the person falls in ROI then it captures the image
 
+**How to Run**
+- clone this repo.
+- Download "yolov3.weights"
+- run "python main.py"
+
 **Sample Output**
 
 ![Screenshot](sample_output.png)
