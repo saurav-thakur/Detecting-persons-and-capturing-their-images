@@ -4,6 +4,7 @@ import numpy as np
 def draw_box_on_person(frame,width,height,detector,CLASSES):
     blob = cv2.dnn.blobFromImage(frame, 0.007843, (width, height), 127.5)
 
+
     detector.setInput(blob)
     person_detections = detector.forward()
 
@@ -21,3 +22,5 @@ def draw_box_on_person(frame,width,height,detector,CLASSES):
             (startX, startY, endX, endY) = person_box.astype("int")
 
             cv2.rectangle(frame, (startX, startY), (endX, endY), (0, 0, 255), 2)
+
+

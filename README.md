@@ -8,7 +8,7 @@
 
 A JSON file was given containing two regions of interest Sideways and Entry. A bounding box was to be made in both ROI’s . The normalized coordinates were given in the JSON file. It was to be denormalized by multiplying x-coordinate with width and y-coordinate with height of the video.
 
-I used a deep neural network of opencv to detect the people present in the video. And whenever the person was inside of the bounding box the model captures the person's picture and saves it in a directory.
+I used HOGDescriptors to extract the features from the video and a deep neural network of opencv to detect the people present in the video. And whenever the person was inside of the bounding box the model captures the person's picture and saves it in a directory.
 
 
 **Results**
@@ -17,7 +17,6 @@ I used a deep neural network of opencv to detect the people present in the video
 
 **How to Run**
 - clone this repo.
-- Download "yolov3.weights"
 - run "python main.py"
 
 **Sample Output**

@@ -39,6 +39,7 @@ def main():
     # denormalized_y = y * h
     total_frames = 0
     count = 0
+    count_sideway = 0
 
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
@@ -46,7 +47,7 @@ def main():
     while True:
         # Read the frame
         ret, frame = video.read()
-        frame = imutils.resize(frame, width=600)
+        frame = imutils.resize(frame, width=900)
         total_frames = total_frames + 1
 
         (height, width) = frame.shape[:2]
